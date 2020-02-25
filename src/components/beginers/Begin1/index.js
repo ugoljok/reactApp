@@ -1,6 +1,7 @@
 import React from 'react';
 import SuperInput from '../../Input';
 import SuperBtn from '../../Button';
+import SuperTitle from '../../Title';
 
 class Begin1 extends React.Component{
 
@@ -22,8 +23,9 @@ class Begin1 extends React.Component{
 
     render(){
         return <div>
-            <SuperInput label="Begin1" onchange={this.inputChangeHandler} value={this.state.a}></SuperInput>
-            <SuperBtn ontyk={this.btnClickHandler}>Рсчитать</SuperBtn>
+            <SuperTitle>Begin1</SuperTitle>
+            <SuperInput label="a" onchange={this.inputChangeHandler} value={this.state.a}></SuperInput>
+            <SuperBtn ontyk={this.btnClickHandler}>Периметр</SuperBtn>
         </div>;
     }
 }
