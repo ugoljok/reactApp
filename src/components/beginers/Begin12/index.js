@@ -30,7 +30,7 @@ class Begin12 extends React.Component{
     }
 
     isBtnDisabled = ()=>{
-        if(Math.abs(+this.state.a)>0 & Math.abs(+this.state.b)>0){
+        if(Math.abs(+this.state.a)>0 && Math.abs(+this.state.b)>0){
             return false;
         }else{
             return true;
