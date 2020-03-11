@@ -21,6 +21,14 @@ class Begin11 extends React.Component{
         this.setState({b:text})
     }
 
+    isBtnEnabled = ()=>{
+        if(+this.state.a===0 || +this.state.b===0){
+            return false;
+        }else{
+            return true;
+        }
+    }
+
     btnClickHandler = ()=>{
         const sum = Math.abs(this.state.a)+Math.abs(this.state.b);
         const rasn = Math.abs(this.state.a)-Math.abs(this.state.b);
@@ -34,7 +42,7 @@ class Begin11 extends React.Component{
             <SuperTitle>Begin11</SuperTitle>
             <SuperInput allowNul={false} label="a" onchange={this.inputChangeAHandler} value={this.state.a}></SuperInput>
             <SuperInput allowNul={false} label="b" onchange={this.inputChangeBHandler} value={this.state.b}></SuperInput>
-            <SuperBtn ontyk={this.btnClickHandler}>Расчитать</SuperBtn>
+            <SuperBtn disabled={!this.isBtnEnabled()} ontyk={this.btnClickHandler}>Расчитать</SuperBtn>
         </div>
     }
 }
