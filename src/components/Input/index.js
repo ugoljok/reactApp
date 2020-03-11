@@ -13,7 +13,8 @@ import React,{useState} from 'react';
 }
 SuperInput.defaultProps = {
     allowNegative:true,
-    allowNul:true
+    allowNul:true,
+    onlyNumber:true
 }
 
 export default SuperInput

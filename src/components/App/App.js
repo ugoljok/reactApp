@@ -11,6 +11,7 @@ import Begin8 from '../beginers/Begin8';
 import Begin9 from '../beginers/Begin9';
 import Begin10 from '../beginers/Begin10';
 import Begin11 from '../beginers/Begin11';
+import Begin12 from '../beginers/Begin12';
 
 class App extends React.Component {
   
@@ -36,6 +37,7 @@ class App extends React.Component {
         <Begin9></Begin9>
         <Begin10></Begin10>
         <Begin11></Begin11>
+        <Begin12></Begin12>
       </div>
     );
   }
